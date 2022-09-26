@@ -43,6 +43,72 @@
         </article>
       </div>
     </header>
-    <section id="about"></section>
+    <!-- -----about---------- -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <article class="about-col-1">
+            <img src="assets/user.png" alt="profile-pic" />
+          </article>
+          <article class="about-col-2">
+            <h2>About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae voluptatem nobis odio vitae beatae consequatur!
+              Facilis in enim cum nam repellat placeat corporis sunt cumque,
+              pariatur fugiat veritatis quibusdam reiciendis!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Software Engineer</span><br />Design Web/Mobile
+                  applications with cloud services
+                </li>
+                <li>
+                  <span>Fullstack Developer</span><br />Design Web/App
+                  applications and friendly APIs
+                </li>
+                <li>
+                  <span>Test Automation Engineer</span><br />
+                  Testing services that ensure high-quality products
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>experience</span><br />first experience</li>
+                <li><span>experience 2</span><br />second experience</li>
+                <li>
+                  <span>experience 3</span><br />
+                  thir experience
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>eduaction 1</span><br />Education</li>
+                <li><span>eduaction 2</span><br />eduaction 2</li>
+                <li>
+                  <span>eduaction 3</span><br />
+                  eduaction 3
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
