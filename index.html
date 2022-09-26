@@ -4,7 +4,156 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Diego Cabulo Profile</title>
+    <script
+      src="https://kit.fontawesome.com/b5c2e18c71.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="assets/logo-dcab.PNG"
+            alt="logo-profile"
+            class="logo-profile"
+          />
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Portafolio</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <article class="header-text">
+          <p>Software engineer | Fullstack Developer</p>
+          <h1>
+            Hello, I'm <span>Diego</span><br />
+            Cábulo from Colombia
+          </h1>
+        </article>
+      </div>
+    </header>
+    <!-- -----about---------- -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <article class="about-col-1">
+            <img src="assets/user.png" alt="profile-pic" />
+          </article>
+          <article class="about-col-2">
+            <h2>About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae voluptatem nobis odio vitae beatae consequatur!
+              Facilis in enim cum nam repellat placeat corporis sunt cumque,
+              pariatur fugiat veritatis quibusdam reiciendis!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Software Engineer</span><br />Design Web/Mobile
+                  applications with cloud services
+                </li>
+                <li>
+                  <span>Fullstack Developer</span><br />Design Web/App
+                  applications and friendly APIs
+                </li>
+                <li>
+                  <span>Test Automation Engineer</span><br />
+                  Testing services that ensure high-quality products
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>experience</span><br />first experience</li>
+                <li><span>experience 2</span><br />second experience</li>
+                <li>
+                  <span>experience 3</span><br />
+                  thir experience
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>eduaction 1</span><br />Education</li>
+                <li><span>eduaction 2</span><br />eduaction 2</li>
+                <li>
+                  <span>eduaction 3</span><br />
+                  eduaction 3
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- -----Services---------- -->
+    <section id="services">
+      <div class="container">
+        <h2>My services</h2>
+        <article class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h3>Software Engineer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              illo fugiat ipsa unde provident ea nisi vitae, magni tempora.
+              Nulla nisi adipisci consectetur fugit odit quisquam mollitia,
+              pariatur natus eius.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h3>Fullstack Developer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              illo fugiat ipsa unde provident ea nisi vitae, magni tempora.
+              Nulla nisi adipisci consectetur fugit odit quisquam mollitia,
+              pariatur natus eius.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h3>Test Automation Engineer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              illo fugiat ipsa unde provident ea nisi vitae, magni tempora.
+              Nulla nisi adipisci consectetur fugit odit quisquam mollitia,
+              pariatur natus eius.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>
