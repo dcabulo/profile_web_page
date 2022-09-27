@@ -373,3 +373,120 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
+
+/* Media queries  */
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    #header{
+        background-size: 70%;
+        background-position: 75% 35%;
+        height: 80vh;
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 50vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    h2{
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2{
+       flex-basis: 100%; 
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .services-list,.work-list{
+        grid-template-columns:none
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:750px){
+    .header-text{
+        margin-top: 35%;
+        font-size: 16px;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+    #header{
+        height: 80vh;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    h4{
+        font-size: 16px;
+    }
+
+    .layer p{
+        font-size: 12px;
+    }
+    
+}
+
+@media only screen and (min-width:1025px){
+    .header-text{
+        margin: 20% 20% 20% 0%;
+        font-size: 30px;
+    }
+    h1{
+        font-size: 60px;
+        margin-top: 20px;
+    }
+}
